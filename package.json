@@ -1,0 +1,28 @@
+{
+  "name": "new_bookworm",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
+    "d3": "^5.1.0",
+    "history": "^4.7.2",
+    "material-ui": "^1.0.0-beta.45",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "react-scripts": "1.1.4",
+    "recompose": "^0.27.0",
+    "redux": "^4.0.0",
+    "redux-form": "^7.3.0",
+    "redux-thunk": "^2.2.0",
+    "semiotic": "^1.10.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
