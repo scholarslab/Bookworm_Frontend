@@ -2,17 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
-import purple from 'material-ui/colors/purple';
+// import purple from 'material-ui/colors/purple';
 import { loadOptions } from './BookwormActions';
-import * as d3 from 'd3';
-import json from './options.json';
-import lines from "./SharedToolTipData"
-import SharedToolTip from "./SharedToolTip"
+// import * as d3 from 'd3';
+// import json from './options.json';
+// import lines from "./SharedToolTipData"
+// import SharedToolTip from "./SharedToolTip"
+// import D3MultiLineD3Graph from "./MultiLine"
+import MultiLineD3Graph from './D3MultiLine';
 // console.log(compose);
 const theme = createMuiTheme({
     palette: {
-        primary: { main: purple[500] }, // Purple and green play nicely together.
-        secondary: { main: '#11cb5f' }, // This is just green.A700 as hex.
+        primary: { main: '#b3e5fc', }, // Purple and green play nicely together.
+        secondary: { main: '#e1bee7', }, // This is just green.A700 as hex.
     },
     container: {
         display: 'flex',
@@ -30,7 +32,7 @@ export class Bookworm extends React.Component {
     render() {
         return (
             <MuiThemeProvider theme={theme} >
-                <SharedToolTip lines={lines} />
+                <MultiLineD3Graph />
             </MuiThemeProvider>
         );
     }

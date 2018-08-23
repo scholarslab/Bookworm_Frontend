@@ -1,0 +1,35 @@
+ body {
+     font: 10px sans-serif;
+ }
+
+ .overlay {
+     fill: none;
+     pointer-events: all;
+ }
+
+ .axis path,
+ .axis line {
+     fill: none;
+     stroke: #000;
+     shape-rendering: crispEdges;
+ }
+
+ .lines {
+     fill: none;
+     stroke-linejoin: round;
+     stroke-linecap: round;
+     stroke-width: 1.5px;
+ }
+
+ .voronoi path {
+     fill: none;
+     pointer-events: all;
+ }
+
+ text {
+     fill: black;
+ }
+
+ .line--hover {
+     stroke-width: 5px;
+ }

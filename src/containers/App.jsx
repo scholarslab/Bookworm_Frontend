@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import Bookworm from './Bookworm';
+import Navbar from '../components/Navbar'
 
 const App = () => (
-    <main>
+    <div>
+        <Navbar />
         <Route exact path="/" component={Bookworm} />
-    </main>
+    </div>
 );
 export default App;
